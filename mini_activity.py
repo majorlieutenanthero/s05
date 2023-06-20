@@ -6,7 +6,8 @@ checker = "Y"
 
 while checker == "Y":
     item = input ("INVALID INPUT!, Please Enter the name of the item: ")
-    item = float(input("Please enter the price of the item: "))
+    while item == "":
+        item = float(input("Please enter the price of the item: "))
     while price <= 0:
         price = float(input("INVALID INPUT!, Please Enter the price of the item:"))
     
