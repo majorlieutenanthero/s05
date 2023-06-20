@@ -5,11 +5,13 @@ shopping_cart_price = []
 checker = "Y"
 
 while checker == "Y":
-    item = input ("INVALID INPUT!, Please Enter the name of the item: ")
+    item = input ("Please Enter the name of the item: ")
     while item == "":
-        item = float(input("Please enter the price of the item: "))
+        item = input ("INVALID INPUT!, Please Enter the name of the item: ")
+    price = float(input("Please enter the price of the item: "))
     while price <= 0:
-        price = float(input("INVALID INPUT!, Please Enter the price of the item:"))
+        price = float(
+            input("INVALID INPUT!, Please Enter the price of the item:"))
     
     shopping_cart_item.append(item)
     shopping_cart_price.append(price)
@@ -27,4 +29,4 @@ for items in shopping_cart_item:
 for total_price in shopping_cart_price:
     total = total + total_price
 
-print(f"\nThank you afor shopping with us! Your total cost is %{total}")
+print(f"\nThank you afor shopping with us! Your total cost is ${total}")
